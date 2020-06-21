@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Nav from './Components/Nav/Nav';
+import Hero from './Components/Hero/Hero';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  className="App">
+      <Nav/>
+      <Hero />
+      <div className="Cricket">
+        <h2>Cricket Scores</h2>
+      </div>
+      <div className="footer">
+        <h4>Created by Shubham Tiwari - 2020</h4>
+        <div className="social-links">
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
     </div>
   );
 }

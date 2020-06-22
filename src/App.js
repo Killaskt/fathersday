@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './App.css';
 
 import Nav from './Components/Nav/Nav';
@@ -6,7 +13,13 @@ import Hero from './Components/Hero/Hero';
 
 function App() {
   return (
-    <div  className="App">
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route exact path="/" component={App}></Route>
+          <Route exact path="/home" component={App}></Route>
+        </Switch>
+      </Router>
       <Nav/>
       <Hero />
       <div className="Cricket">

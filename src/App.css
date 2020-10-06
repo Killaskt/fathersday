@@ -293,9 +293,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 600px) {
+  .App {
+    grid-template:
+        "space" 230px
+        "hero" 1fr
+        "content" 1fr
+        "footer" 150px/1fr;
+  }
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1.1fr 1fr;
+  }
+
+  .navigation {
+    height: 10%;
+    background: rgba(0,0,0,0.04);
+  }
+  .navigation .logo {
+    background: aquamarine;
+  }
+  .navigation .logo {
+    background: azure;
+    text-align: left;
+    margin-top: 5px;
   }
 
   .pic-cont .pic {

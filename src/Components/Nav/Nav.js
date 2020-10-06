@@ -9,7 +9,7 @@ const Nav = () => {
 
   const handleScroll = useCallback(() => {
     setScrollPixelsY(window.scrollY);
-    if(scrollPixelsY > 95) {
+    if(scrollPixelsY > 98) {
       document.querySelector('.navigation').style.padding = "20px 20px 0";
       document.querySelector('.NavItems a').style.display = "none";
       document.querySelector('.logo').style.fontSize = "1.5rem";

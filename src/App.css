@@ -321,4 +321,15 @@ body::-webkit-scrollbar-thumb {
   .pic-cont .pic {
     width: 100%;
   }
+  .hero .letter {
+    margin-bottom: 30px;
+  }
+  .Cricket {
+    display: grid;
+    height: 1vh;
+    justify-content: center;
+  }
+  .Cricket .h1 {
+    margin: 0;
+  }
 }

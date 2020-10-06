@@ -289,4 +289,9 @@ body::-webkit-scrollbar-thumb {
     display: block;
     text-align: left;
   }
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
